@@ -44,7 +44,23 @@ function header() {
 
 header();
 
-function kv() {}
+function kv() {
+  const kv = document.querySelector(".sc__kv");
+  ScrollTrigger.create({
+    trigger: ".sc__about",
+    start: "bottom top",
+    markers: true,
+    onEnter: () => {
+      gsap.set(kv, { opacity: 0 });
+    },
+    onLeaveBack: () => {
+      console.log("onLeaveBack");
+      gsap.set(kv, { opacity: 1 });
+    },
+  });
+}
+
+kv();
 
 function about() {
   const titles = gsap.utils.toArray(".sc__about h2 p span");
