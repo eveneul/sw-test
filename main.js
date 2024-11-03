@@ -44,6 +44,16 @@ function header() {
 
 header();
 
+// function cursor() {
+//   const cursor = document.querySelector("#cursor");
+//   window.addEventListener("pointermove", (event) => {
+//     const position = { x: event.clientX, y: event.clientY };
+//     cursor.style.transform = `translate(${position.x}px, ${position.y}px)`;
+//   });
+// }
+
+// cursor();
+
 function kv() {
   const kv = document.querySelector(".sc__kv");
   ScrollTrigger.create({

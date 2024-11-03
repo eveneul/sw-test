@@ -264,6 +264,10 @@ footer .footer__content--sns li span {
   font-weight: 500;
 }
 
+* {
+  cursor: url("/assets/images/cursor.png") 2 2, auto;
+}
+
 .main .sc__kv {
   position: fixed;
   top: 0;
