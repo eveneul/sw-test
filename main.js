@@ -26,6 +26,26 @@ function fadeIn(element, index = 0) {
   });
 }
 
+function header() {
+  const header = document.querySelector("header");
+  ScrollTrigger.create({
+    trigger: "html",
+    start: "top top",
+    end: "+=99999",
+    onUpdate: (event) => {
+      if (event.direction === 1) {
+        gsap.to(header, { yPercent: -100 });
+      } else {
+        gsap.to(header, { yPercent: 0 });
+      }
+    },
+  });
+}
+
+header();
+
+function kv() {}
+
 function about() {
   const titles = gsap.utils.toArray(".sc__about h2 p span");
   const descriptions = gsap.utils.toArray(".sc__about > div p span");
