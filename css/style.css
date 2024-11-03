@@ -601,6 +601,7 @@ footer .footer__content--sns li span {
   line-height: 1.5;
   letter-spacing: -0.005em;
   color: #000;
+  font-weight: 400;
   transform: translateY(100%);
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -816,6 +817,7 @@ footer .footer__content--sns li span {
   font-size: 17px;
   line-height: 1.5;
   letter-spacing: -0.005em;
+  font-weight: 500;
   color: #000;
   height: 160px;
   margin-top: 8px;

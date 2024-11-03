@@ -199,6 +199,7 @@
         top: 0;
         @include typo-body-lg;
         color: $black;
+        font-weight: 400;
         transform: translateY(100%);
         @include easing;
       }
@@ -429,6 +430,7 @@
           padding: 16px;
           resize: none;
           @include typo-body-md;
+          font-weight: 500;
           color: $black;
           height: 160px;
           margin-top: 8px;
@@ -445,6 +447,7 @@
 
       button {
         @include button_gray;
+
         margin-top: 40px;
         margin-left: auto;
       }
